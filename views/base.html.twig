@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    {% block title %}{% endblock %}
+    {% include 'shared/head.html.twig' %}
+</head>
+
+<body>
+{% block body %}{% endblock %}
+{% block scripts %}{% endblock %}
+{#<div class="filler-3"></div>#}
+{#<div class="text-center">#}
+{#    <pwa-install></pwa-install>#}
+{#</div>#}
+<script type="module">
+// import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+//
+// const el = document.createElement('pwa-update');
+// document.body.appendChild(el);
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/vendor/
+composer.json
+composer.lock
+manifest.json
+offline.html
+pwabuilder-sw.js
+todo.md
+upload.md
+/src/Data/DBConfig.php
+/src/Services/NavigationService.php
+/src/Services/ServicesConfig.php
