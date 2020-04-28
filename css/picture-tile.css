@@ -1,0 +1,25 @@
+.picture-tile {
+    width: 23%;
+    height: 15em;
+    background-color: #666666;
+    float: left;
+    margin: 1.3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*outline: 1px solid #333333;*/
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 0 10px 1px ;
+    box-shadow: 0 0 10px 1px ;
+    overflow: hidden;
+}
+
+.picture-tile-category {
+    background-color: rgba(254, 121, 47, 0.9);
+    color:#eeeeee;
+    font-size: 1.3em;
+    text-align: right;
+    padding:0.3em;
+    -webkit-box-shadow: 0 0 10px 1px ;
+    box-shadow: 0 0 10px 1px ;
+}

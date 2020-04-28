@@ -8,4 +8,5 @@ todo.md
 upload.md
 /src/Data/DBConfig.php
 /src/Services/NavigationService.php
-/src/Services/ServicesConfig.php
+/src/Config/Config.php
+/img/

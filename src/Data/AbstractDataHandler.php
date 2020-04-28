@@ -2,6 +2,7 @@
 
 namespace Data;
 
+use Config\Config;
 use PDO;
 
 class AbstractDataHandler
@@ -47,7 +48,7 @@ class AbstractDataHandler
 
     private function openDataBase()
     {
-        $this->dbh = new PDO(DBConfig::$DB_CONNECTIONSTRING, DBConfig::$DB_USER, DBConfig::$DB_PASSWORD);
+        $this->dbh = new PDO(Config::DB_CONNECTIONSTRING, Config::DB_USER, Config::DB_PASSWORD);
     }
 
     private function closeDataBase()

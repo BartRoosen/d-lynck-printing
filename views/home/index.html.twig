@@ -5,7 +5,45 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Home sweet home</h1>
+    <div class="container-fluid">
+        {% if null == pictures %}
+            <div class="alert alert-heading">
+                Er zijn momenteel geen voorbeeldfoto's beschikbaar...
+            </div>
+        {% else %}
+            {% for picture in pictures %}
+                <div class="picture-tile" style="background-image: url('{{ picture.path }}')">
+                    <div class="picture-tile-category">
+                        {{ picture.categoryName }}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+{#    <div class="no-display">#}
+{#        <video autoplay muted loop id="myVideo">#}
+{#            <source src="img/backgrounds/wolken.mp4" type="video/mp4">#}
+{#        </video>#}
+{#        <div class="home-screen-banner">#}
+{#            hell yeah, for some fine ass printing you have come to the right place...#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="waiting-for-display">#}
+{#        <div class="loading">#}
+{#            Loading <i class="fas fa-spinner fa-spin"></i>#}
+{#        </div>#}
+{#    </div>#}
 {% endblock %}
 {% block scripts %}
+    <script>
+        $(document).ready(function () {
+            // $('.waiting-for-display').hide();
+            // $('.no-display').fadeIn(500);
+            // $('#myVideo').playbackRate = 3;
+            // setTimeout(function () {
+            //     $('.home-screen-banner').show(1000);
+            // }, 3000)
+        });
+    </script>
 {% endblock %}

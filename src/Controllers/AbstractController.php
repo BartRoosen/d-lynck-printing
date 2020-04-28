@@ -4,6 +4,7 @@
 namespace Controllers;
 
 
+use Config\Config;
 use Services\SessionService;
 use Services\TwigService;
 use Services\YamlParserService;
@@ -13,29 +14,20 @@ class AbstractController
     /** @var TwigService */
     protected $twigService;
 
-    /**
-     * @var YamlParserService
-     */
+    /** @var YamlParserService */
     protected $parserService;
 
-    /**
-     * @var SessionService
-     */
+    /** @var SessionService */
     protected $sessionService;
 
-    protected $homeContent;
-
-    protected $menu;
-
-    protected $fontAwesome;
+    /** @var Config */
+    protected $basePath;
 
     public function __construct()
     {
         $this->twigService    = new TwigService();
         $this->parserService  = new YamlParserService();
         $this->sessionService = new SessionService();
-//        $this->homeContent = $this->parserService->parseFile('content/home.yml');
-//        $this->menu = $this->homeContent['menu'];
-//        $this->fontAwesome = $this->parserService->parseFile('config/font-awesome.yml');
+        $this->basePath       = Config::BASE_PATH;
     }
 }
