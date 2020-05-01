@@ -12,7 +12,7 @@ class Picture
     private $id;
 
     /** @var int */
-    private $category;
+    private $categoryId;
 
     /** @var string */
     private $path;
@@ -48,17 +48,17 @@ class Picture
     /**
      * @return int
      */
-    public function getCategory(): int
+    public function getCategoryId(): int
     {
-        return $this->category;
+        return $this->categoryId;
     }
 
     /**
-     * @param int $category
+     * @param int $categoryId
      */
-    public function setCategory(int $category): void
+    public function setCategoryId(int $categoryId): void
     {
-        $this->category = $category;
+        $this->categoryId = $categoryId;
     }
 
     /**
@@ -86,9 +86,9 @@ class Picture
     }
 
     /**
-     * @param string $comment
+     * @param string $comment | null
      */
-    public function setComment(string $comment): void
+    public function setComment($comment): void
     {
         $this->comment = $comment;
     }

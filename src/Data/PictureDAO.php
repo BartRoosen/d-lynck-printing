@@ -10,7 +10,7 @@ class PictureDAO extends AbstractDataHandler
 {
     const COLUMNS = [
         'picture_id'    => 'setId',
-        'category_id'   => 'setCategory',
+        'category_id'   => 'setCategoryId',
         'cover_picture' => 'setCoverPicture',
         'path'          => 'setPath',
         'comment'       => 'setComment',
@@ -34,19 +34,15 @@ class PictureDAO extends AbstractDataHandler
         return $this->objectify($rows);
     }
 
-    public function getPicturesByCategoryId($categoryId)
+    public function getPicturesByCategotyId($categoryId)
     {
-        $rows = $this->select('select p.id as picture_id,
-                                               p.category as category_id,
-                                               c.name as category_name,
-                                               p.cover_picture as cover_picture,
-                                               p.path as path,
-                                               p.comment as comment
-                                        from dlp_picture p
-                                        left join dlp_category c on (c.id = p.category)
-                                        where p.category = :category_id and p.deleted = 0',
+        $rows = $this->select(
+            'select id as picture_id,
+                           path as path,
+                           comment as comment
+                    from dlp_picture where category = :category_id and deleted = 0',
             [
-                'category_id' => $categoryId,
+                ':category_id' => $categoryId,
             ]
         );
 

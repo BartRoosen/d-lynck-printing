@@ -30,4 +30,9 @@ class AbstractController
         $this->sessionService = new SessionService();
         $this->basePath       = Config::BASE_PATH;
     }
+
+    protected function redirect($path)
+    {
+        header(sprintf('location: %s', $path));
+    }
 }

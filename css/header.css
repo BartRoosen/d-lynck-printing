@@ -1,0 +1,30 @@
+.header-wrapper {
+    position: fixed;
+    height:80px;
+    width:100%;
+    background-color: black;
+    color: #eeeeee;
+    padding: 0 16px;
+}
+
+.test {
+    position: relative;
+    height:100vh;
+    width: 100%;
+    background-color: #2378b8;
+    top:0;
+    z-index: -10;
+}
+
+.black {
+    height: 2em;
+    width: 100%;
+    outline: 2px solid orange;
+}
+
+.sub-header {
+    background-color: #1b1e21;
+    color: #eeeeee;
+    text-align: center;
+    padding: 1em;
+}

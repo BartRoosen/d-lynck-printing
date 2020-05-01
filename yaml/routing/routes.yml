@@ -2,3 +2,7 @@ home:
   uri: /home/
   controller: HomeController
   action: index
+category:
+  uri: /category/
+  controller: CategoryController
+  action: index

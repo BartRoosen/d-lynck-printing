@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <title>d-lynck printing</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid sub-header">
+        <h1>{{ category.name | capitalize }}</h1>
+    </div>
+    {% if null == pictures %}
+        <div class="container-fluid">
+            <div class="alert alert-heading">
+                Er zijn momenteel geen voorbeeldfoto's beschikbaar...
+            </div>
+        </div>
+    {% else %}
+        <div class="container-fluid wrapper">
+            {% for picture in pictures %}
+                <div class="picture-tile" style="background-image: url('{{ picture.path }}');">
+                    <div class="picture-tile-category">
+                        <i class="fas fa-search-plus enlarge" data-url="{{ picture.path }}"></i>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="picture-large keep-hidden">
+            <div class="text-right hide-large-pic">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="large-pic">
+                <img class="large-pic-image" src=""/>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+{% block scripts %}
+    <script>
+        var pictureContainer = $('.picture-large');
+        $('.enlarge').on('click', function () {
+            var self = $(this),
+                url = self.data('url'),
+                scroll = $(window).scrollTop();
+
+            $('.large-pic-image').attr('src', url);
+            pictureContainer
+                .fadeIn(300)
+                .css({top: scroll + 'px'});
+
+            $('body').css({overflow: 'hidden'});
+        });
+
+        $('.hide-large-pic, .picture-large').on('click', function () {
+            pictureContainer.fadeOut(300);
+            $('body').css({overflow: 'unset'});
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,12 @@
+body {
+    overflow: unset;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+a:hover {
+    color: rgba(255, 149, 29,1)
+}
