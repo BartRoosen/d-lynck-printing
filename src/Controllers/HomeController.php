@@ -22,9 +22,11 @@ class HomeController extends AbstractController
 
     public function index()
     {
+        $test = $this->parserService->parseFile('content/carrousel.yml');
+//        $test = json_encode(json_decode($test));
         return $this->twigService->render('home/index.html.twig', [
             'base_path' => $this->basePath,
-            'pictures'  => $this->pictureDAO->getCoverPictures(),
+            'pictures'  => $test,
         ]);
     }
 }

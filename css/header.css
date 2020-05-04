@@ -1,19 +1,11 @@
 .header-wrapper {
-    position: fixed;
-    height:80px;
+    height:3em;
     width:100%;
-    background-color: black;
+    background-color: #000000;
     color: #eeeeee;
     padding: 0 16px;
-}
-
-.test {
-    position: relative;
-    height:100vh;
-    width: 100%;
-    background-color: #2378b8;
-    top:0;
-    z-index: -10;
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
 }
 
 .black {
@@ -27,4 +19,16 @@
     color: #eeeeee;
     text-align: center;
     padding: 1em;
+}
+
+.header-logo {
+    height:96px;
+}
+
+.menu-wrapper {
+
+}
+
+.bg-dark {
+    background-color: #000000 !important;
 }

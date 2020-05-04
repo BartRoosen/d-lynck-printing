@@ -1,0 +1,77 @@
+.page-part-wrapper {
+    width: 100%;
+    height: 35em;
+    margin-top: 1px;
+    /*outline: 1px solid #eeeeee;*/
+    /*overflow: hidden;*/
+}
+
+.page-part {
+    /*outline: 1px solid orange;*/
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.page-part-left {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.page-part-right {
+    background-color: #000000;
+    /*background-image: url("../img/pics/sport_2.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.info-title-wrapper {
+    padding-top: 5em;
+}
+
+.info-title {
+    display: inline-block;
+    height:12em;
+    width: 12em;
+    background-image: url('../img/logo/new-logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*outline: 1px solid orange;*/
+}
+
+.info-sub-title {
+    color: #888888;
+}
+
+.info-button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #000000;
+    color: #eeeeee;
+    padding:0.7em 1em;
+    margin-top: 2em;
+}
+
+.info-button:hover {
+    background-color: #ffffff;
+    outline: 1px solid #000000;
+    color: #000000;
+}
+
+.picture-carousel {
+    height:100%;
+    /*width: 9000%;*/
+}
+
+
+.custom-carousel-item {
+    height:100%;
+    /*width: 50%;*/
+    float: left;
+    color:white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

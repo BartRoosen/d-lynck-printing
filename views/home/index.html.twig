@@ -5,51 +5,67 @@
 {% endblock %}
 
 {% block body %}
-    {% if null == pictures %}
-        <div class="container-fluid">
-            <div class="alert alert-heading">
-                Er zijn momenteel geen voorbeeldfoto's beschikbaar...
-            </div>
-        </div>
-    {% else %}
-        <div class="waiting-for-display">
-            <div class="loading">
-                Loading <i class="fas fa-spinner fa-spin"></i>
-            </div>
-        </div>
-        <div class="no-display">
-            <div class="container-fluid picture-tile-wrapper">
-                {% for picture in pictures %}
-                    <div class="picture-tile" style="background-image: url('{{ picture.path }}')"
-                         data-id="#comment_{{ picture.id }}">
-                        <div class="picture-tile-category">
-                            {{ picture.categoryName | capitalize }}
-                        </div>
-                        <div class="picture-tile-comment" id="comment_{{ picture.id }}">
-                            {{ picture.comment | capitalize }}
-                            <div class="picture-tile-view-more">
-                                <a href="./category/{{ picture.categoryId }}" class="btn btn-lg btn-outline-warning">Bekijk meer</a>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            <video autoplay muted loop id="myVideo">
-                <source src="img/video/network.mp4" type="video/mp4">
-                <div class="black"></div>
-            </video>
-        </div>
-    {% endif %}
+    {% include 'page-parts/info.html.twig' %}
+    <div class="devider"></div>
+    <div class="filler-5em"></div>
 {% endblock %}
 {% block scripts %}
     <script>
-        $(document).ready(function () {
-            $('.waiting-for-display').hide();
-            $('.no-display').fadeIn(500);
-            // $('#myVideo').playbackRate = 3;
-            // setTimeout(function () {
-            //     $('.home-screen-banner').show(1000);
-            // }, 3000)
+        var carousel = $('.picture-carousel'),
+            pics = {{ pictures | json_encode|raw }},
+            numberOfPics = pics.length,
+            proceed = true,
+            counter = 0,
+            mLeft = 0,
+            shitTime = 4000;
+
+        $('.link').on('click', function () {
+            var self = $(this), url = self.data('url');
+
+            alert(url);
         });
+
+        $(document).ready(function () {
+            addPictures();
+        });
+
+        function spinTheCarousel() {
+            if (proceed === true) {
+                proceed = false;
+                spinTheCarousel();
+            } else {
+                setTimeout(function () {
+                    proceed = true;
+                    // changePicture(counter);
+                    shiftPicture();
+                    counter++;
+                    counter = counter === numberOfPics ? 0 : counter;
+                    spinTheCarousel();
+                }, shitTime);
+            }
+        }
+
+        function shiftPicture()
+        {
+            if (mLeft === -((100 * numberOfPics) - 100)) {
+                mLeft = 0;
+            } else {
+                mLeft = mLeft - 100;
+            }
+
+            $('.picture-carousel').animate({marginLeft: mLeft + '%'});
+        }
+
+        function addPictures()
+        {
+            $('.picture-carousel').css({'width': 100 * numberOfPics + '%'});
+
+            for (let i = 0; i < pics.length; i++) {
+                let url = '\'img\/pics\/' + pics[i] + '.jpg\'';
+                carousel.append('<div class="custom-carousel-item" style="width: '+ 100 / numberOfPics  +'%;background-image: url(' + url + ');"></div>')
+            }
+
+            spinTheCarousel();
+        }
     </script>
 {% endblock %}

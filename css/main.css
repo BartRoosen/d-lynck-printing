@@ -1,5 +1,6 @@
 body {
     overflow: unset;
+    background-color: #000000;
 }
 
 a {
@@ -8,5 +9,16 @@ a {
 }
 
 a:hover {
-    color: rgba(255, 149, 29,1)
+    color: rgba(255, 149, 29, 1)
+}
+
+.site-container {
+    width: 94%;
+    margin-left: 3%;
+}
+
+.devider {
+    height: 3em;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
 }
