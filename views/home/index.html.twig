@@ -6,10 +6,22 @@
 
 {% block body %}
     {% include 'page-parts/info.html.twig' %}
-    <div class="devider"></div>
+    <div class="filler-5em"></div>
+    <div class="hr-custom"></div>
+    {% include 'page-parts/product-overview.html.twig' %}
+    <div class="filler-5em"></div>
+    <div class="hr-custom"></div>
+    {% include 'page-parts/more-info.html.twig' %}
+    <div class="filler-5em"></div>
+    <div class="hr-custom"></div>
+    {% include 'page-parts/contact.html.twig' %}
+    <div class="filler-5em"></div>
+    <div class="hr-custom"></div>
+    <hr/>
     <div class="filler-5em"></div>
 {% endblock %}
 {% block scripts %}
+    <script src="js/slider.js"></script>
     <script>
         var carousel = $('.picture-carousel'),
             pics = {{ pictures | json_encode|raw }},
@@ -19,10 +31,12 @@
             mLeft = 0,
             shitTime = 4000;
 
-        $('.link').on('click', function () {
-            var self = $(this), url = self.data('url');
+        $('.link, .nav-link').on('click', function () {
+            var self = $(this), anchor = self.data('anchor');
 
-            alert(url);
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(anchor).offset().top
+            }, 500);
         });
 
         $(document).ready(function () {

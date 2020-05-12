@@ -1,0 +1,17 @@
+.contact-form, .contact-picture {
+    width: 50%;
+    height: 35em;
+    background-color: #ffffff;
+    float:left;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-picture {
+    background-image: url('../img/contact/smartphone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

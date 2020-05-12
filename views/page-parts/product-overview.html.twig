@@ -1,0 +1,13 @@
+<div class="product-overview-wrapper">
+    <div class="slider-control slider-control-left">
+        <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="product-overview-slider"></div>
+    <div class="slider-control slider-control-right">
+        <i class="fas fa-chevron-right"></i>
+    </div>
+</div>
+
+<script>
+    var  products = {{ products | json_encode | raw }};
+</script>

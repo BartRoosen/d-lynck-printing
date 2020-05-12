@@ -1,0 +1,47 @@
+/*.more-info-title {*/
+/*    text-align: center;*/
+/*    color: #eeeeee;*/
+/*    text-transform: uppercase;*/
+/*    padding: 2em;*/
+/*    font-size: 1.2em;*/
+/*    font-weight: lighter;*/
+/*}*/
+
+.more-info-picture {
+    width: 48%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 22em;
+}
+
+.more-info-spacer {
+    width: 4%;
+    height: 1em;
+    float: left;
+}
+
+.desk-left {
+    background-image: url('../img/more-info/desk1.jpg');
+}
+
+.desk-right {
+    background-image: url('../img/more-info/desk2.jpg');
+}
+
+.more-info-seo {
+    width: 48%;
+    float: left;
+    text-align: center;
+    color: #c3c3c3;
+    padding:1em 6em;
+}
+
+.more-info-seo > h2 {
+    text-transform: uppercase;
+    padding: 2em;
+    color: #eeeeee;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
