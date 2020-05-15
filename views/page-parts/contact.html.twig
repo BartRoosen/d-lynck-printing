@@ -1,9 +1,21 @@
-<div class="page-part-title" id="contact">
-    contact
+<div class="filler-8em" id="contact"></div>
+<div class="page-part-title">
+    {{ seo.contact.title }}
 </div>
+<div class="contact-seo">{{ seo.contact.content.text }}</div>
 <div class="float-box">
     <div class="contact-form">
-        Contact form here...
+        <div class="contact-details">
+{#            <h4>{{ seo.contact.content.details.company }}</h4>#}
+            <table class="table table-dark">
+                {% for row in seo.contact.content.details.tablecontent %}
+                <tr>
+                    <td class="text-left">{{ row.left }}</td>
+                    <td class="text-right">{{ row.right }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
     </div>
     <div class="contact-picture"></div>
 </div>

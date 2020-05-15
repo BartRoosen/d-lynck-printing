@@ -1,0 +1,60 @@
+lang:
+  fr: français
+  nl: nederlands
+
+menu:
+  contact: contact
+  info: info
+  examples: voorbeelden
+  home: home
+
+home:
+  line_1: Creative oplossingen
+  line_2: Welkom bij D-Lynck drukwerk!
+  line_3: Bij ons kan u terecht voor talrijke bedrukkingen, zowel privé als voor uw onderneming.
+  button:
+    anchor: info
+    caption: Meer informatie
+
+examples:
+  title: Voorbeelden
+
+more_info:
+#  title: Designs van hoge kwaliteit
+  left:
+#    title: print ontwerp
+    content: |
+      Wij plaatsen uw eigen ontwerp met de grootste zorg op kwalitatief textiel.
+      Maar ook als u zelf nog geen ontwerp gemaakt heeft, transformeren we uw idee
+      samen tot het gewenste eindresultaat.
+  right:
+#    title: title ?
+    content: |
+      Zowel voor professionele werkkledij als vrijetijdskledij, maar ook voor originele
+      gepersonaliseerde cadeaus bent u bij d-lynck-drukwerk op het juiste adres!
+
+contact:
+  title: contact
+  content:
+    text: |
+      Aarzel niet ons te contacteren voor een vrijblijvende offerte.
+      Zo kunnen we samen uw wensen en onze mogelijkheden overlopen.
+    details:
+      company: D-Lynck BV
+      tablecontent:
+        row_1:
+          left: Contact
+          right: Davy Oorlynck
+        row_2:
+          left: GSM
+          right: +32 490 499 709
+        row_3:
+          left: email
+          right: davy.oorlynck@d-lynck.be
+        row_4:
+          left: Adres
+          right: St.-Jorisveld 49, 3390 St.-Joris Winge, België
+        row_5:
+          left: BTW
+          right: 0726 771 015
+

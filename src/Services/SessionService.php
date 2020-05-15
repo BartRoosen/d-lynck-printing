@@ -96,4 +96,16 @@ class SessionService
 
         return $anchor;
     }
+
+    public function getLanguage()
+    {
+        $this->start();
+        $lang = $this->getValue('lang');
+        if ($lang) {
+
+            return $lang;
+        }
+
+        return 'nl';
+    }
 }

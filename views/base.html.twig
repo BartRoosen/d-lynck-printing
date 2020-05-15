@@ -5,8 +5,8 @@
 </head>
 
 <body>
+{% include 'shared/header.html.twig' %}
 <div class="site-container">
-    {% include 'shared/header.html.twig' %}
     {% block body %}{% endblock %}
     {% block scripts %}{% endblock %}
 </div>

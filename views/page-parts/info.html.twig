@@ -3,10 +3,16 @@
         <div class="info-title-wrapper">
             <div class="info-title"></div>
             <div class="info-sub-title">
-                Creative oplossingen
+                {{ seo.home.line_1 | capitalize }}
             </div>
-            <div class="info-button link" data-anchor="#more-info">
-                Meer informatie
+            <div class="info-sub-title">
+                {{ seo.home.line_2 | capitalize }}
+            </div>
+            <div class="info-sub-title">
+                {{ seo.home.line_3 | capitalize }}
+            </div>
+            <div class="info-button link" data-anchor="#{{ seo.home.button.anchor }}">
+                {{ seo.home.button.caption | capitalize }}
             </div>
         </div>
     </div>

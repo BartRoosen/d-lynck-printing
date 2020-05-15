@@ -1,12 +1,13 @@
 .contact-form, .contact-picture {
     width: 50%;
-    height: 35em;
+    height: 22em;
     background-color: #ffffff;
     float:left;
 }
 
 .contact-form {
     text-align: center;
+    /*padding: 1em 3em;*/
 }
 
 .contact-picture {
@@ -14,4 +15,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.contact-details {
+    width: 80%;
+    display: inline-block;
+    height:100%;
+    /*background-color: rgba(0,128,212, 1);*/
+    background-image: url("../img/logo/new-logo.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #eeeeee;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    padding: 7em 1em;
+}
+
+/*.contact-details > table {*/
+/*    position: absolute;*/
+/*    bottom:0;*/
+/*}*/
+
+.contact-seo {
+    text-align: center;
+    color: #c3c3c3;
+    padding:1em 6em;
 }

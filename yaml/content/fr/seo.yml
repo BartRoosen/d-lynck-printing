@@ -1,0 +1,59 @@
+lang:
+  fr: français
+  nl: nederlands
+
+menu:
+  contact: contact
+  info: info
+  examples: exemples
+  home: accueil
+
+home:
+  line_1: Des solutions créatives
+  line_2: Bienvenue chez D-Lynck imprimés!
+  line_3: Nous sommes à votre service pour toutes vos imprimés, tant privées que professionnelles.
+  button:
+    anchor: info
+    caption: Plus d'information
+
+examples:
+  title: Examples
+
+more_info:
+  #  title: Designs van hoge kwaliteit
+  left:
+    #    title: print ontwerp
+    content: |
+      Avec le plus grand soin, nous imprimons votre propre dessin sur des textiles de qualité.
+      Si vous n'avez pas encore fait de dessin, nous partirons ensemble de votre idée pour arriver
+      au résultat final souhaité.
+  right:
+    #    title: title ?
+    content: |
+      Tant pour des vêtements de travail ou de loisirs, que pour des cadeaux personnalisés
+      originaux, vous êtes au bon endroit !
+
+contact:
+  title: contact
+  content:
+    text: |
+      N'hésitez pas à nous contacter pour une offre gratuite,
+      puis nous parlerons ensemble pour voir vos souhaits se réaliser.
+    details:
+      company: D-Lynck BV
+      tablecontent:
+        row_1:
+          left: Contact
+          right: Davy Oorlynck
+        row_2:
+          left: GSM
+          right: +32 490 499 709
+        row_3:
+          left: email
+          right: davy.oorlynck@d-lynck.be
+        row_4:
+          left: Adresse
+          right: St.-Jorisveld 49, 3390 St.-Joris Winge, Belgique
+        row_5:
+          left: T.V.A.
+          right: 0726 771 015

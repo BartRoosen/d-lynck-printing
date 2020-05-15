@@ -1,19 +1,21 @@
-<div class="page-part-title" id="more-info">
-    Designs van hoge kwaliteit
+<div class="filler-9em" id="info"></div>
+{#<div class="page-part-title">#}
+{#    {{ seo.more_info.title }}#}
+{#</div>#}
+<div class="float-box">
+    <div class="more-info-seo">
+{#        <h2>{{ seo.more_info.left.title }}</h2>#}
+        {{ seo.more_info.left.content }}
+    </div>
+    <div class="more-info-spacer"></div>
+    <div class="more-info-seo">
+{#        <h2>{{ seo.more_info.right.title }}</h2>#}
+        {{ seo.more_info.right.content }}
+    </div>
 </div>
 <div class="float-box">
     <div class="more-info-picture desk-left"></div>
     <div class="more-info-spacer"></div>
     <div class="more-info-picture desk-right"></div>
 </div>
-<div class="float-box">
-    <div class="more-info-seo">
-        <h2>{{ more_info.left.title }}</h2>
-        {{ more_info.left.content }}
-    </div>
-    <div class="more-info-spacer"></div>
-    <div class="more-info-seo">
-        <h2>{{ more_info.right.title }}</h2>
-        {{ more_info.right.content }}
-    </div>
-</div>
+

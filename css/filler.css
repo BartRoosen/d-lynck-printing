@@ -1,6 +1,13 @@
+.filler-1em,
 .filler-5em,
-.filler-7em {
+.filler-7em,
+.filler-8em,
+.filler-9em {
     width: 100%;
+}
+
+.filler-1em {
+    height:1em;
 }
 
 .filler-5em {
@@ -9,4 +16,12 @@
 
 .filler-7em {
     height: 7em;
+}
+
+.filler-8em {
+    height: 8em;
+}
+
+.filler-9em {
+    height:9em;
 }

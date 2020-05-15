@@ -6,3 +6,7 @@ category:
   uri: /category/
   controller: CategoryController
   action: index
+lang:
+  url: /lang/
+  controller: LanguageController
+  action: setLanguage
