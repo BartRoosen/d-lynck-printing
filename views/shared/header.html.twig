@@ -1,6 +1,9 @@
 <div class="scroll-menu-wrapper">
     <img class="banner-logo" src="img/logo/new-logo.PNG" height="80"/>
     <div class="nav-bar-wrapper">
+        <div class="nav-item">
+            <a href="{{ seo.facebook.link }}" target="_blank" class="nav-link facebook-color">{{ seo.facebook.icon | raw }}</a>
+        </div>
         {% for key, item in seo.menu %}
             <div class="nav-item">
                 <div class="nav-link" data-anchor="#{{ key }}">{{ item | capitalize }}</div>

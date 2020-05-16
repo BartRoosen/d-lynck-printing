@@ -48,7 +48,6 @@
 
 .product-description, .product-price {
     background-color: rgba(0,0,0,0.6);
-    border-bottom: 1px solid #eeeeee;
     color: #eeeeee;
     padding: 0.5em 1em;
     text-align: right;
@@ -64,6 +63,6 @@
 }
 
 .product-details-info {
-    margin-top:18em;
+    margin-top:21em;
 }
 

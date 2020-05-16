@@ -8,6 +8,11 @@ menu:
   examples: exemples
   home: accueil
 
+facebook:
+  link: https://www.facebook.com/DLYNCK/
+  icon: <i class="fab fa-facebook-square"></i>
+  title: Visitez notre page facebook
+
 home:
   line_1: Des solutions créatives
   line_2: Bienvenue chez D-Lynck imprimés!

@@ -42,10 +42,10 @@ function addProductDetailsToSlider() {
     for (let i = 0; i < products.length; i++) {
         let product = products[i];
         let element = '<div class="product-details" style="background-image: url(' + product.picture + ')">' +
-                // '<div class="product-details-info">' +
-                //     '<div class="product-description">' + product.description + '</div>' +
-                //     '<div class="product-price">' + product.price + ' </div>' +
-                // '</div>' +
+                '<div class="product-details-info">' +
+                    '<div class="product-description">' + product.description + '</div>' +
+                    // '<div class="product-price">' + product.price + ' </div>' +
+                '</div>' +
             '</div>';
         slider.append(element);
     }

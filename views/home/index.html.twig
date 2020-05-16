@@ -75,8 +75,10 @@
             $('.picture-carousel').css({'width': 100 * numberOfPics + '%'});
 
             for (let i = 0; i < pics.length; i++) {
-                let url = '\'img\/pics\/' + pics[i] + '.jpg\'';
-                carousel.append('<div class="custom-carousel-item" style="width: '+ 100 / numberOfPics  +'%;background-image: url(' + url + ');"></div>')
+                let url = '\'img\/pics\/' + pics[i].foto + '.jpg\'';
+                carousel.append('<div class="custom-carousel-item" style="width: '+ 100 / numberOfPics  +'%;background-image: url(' + url + ');">' +
+                        '<div class="inlay">' + pics[i].inlay + '</div>' +
+                    '</div>');
             }
 
             spinTheCarousel();

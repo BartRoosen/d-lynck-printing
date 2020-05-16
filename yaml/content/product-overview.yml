@@ -1,44 +1,145 @@
-0:
-  picture: img/products/FOTL-premium-navy-blue.jpg
-  description: Fruit of the Loom Ringgesponnen Premium T-shirt Navy Blauw
-  price: Basisprijs € 23,00
-1:
-  picture: img/products/GIL-zwaar-blauw.jpg
-  description: Gildan Zwaar katoenen Blauw
-  price: Basisprijs € 23,00
-2:
-  picture: img/products/GIL-zwaar-charcoal.jpg
-  description: Gildan Zwaar katoenen T-shirt Charcoal
-  price: Basisprijs € 23,00
-3:
-  picture: img/products/GIL-zwaar-groen.jpg
-  description: Gildan Zwaar katoenen T-shirt Groen
-  price: Basisprijs € 23,00
-4:
-  picture: img/products/GIL-zwaar-wit.jpg
-  description: Gildan Zwaar katoenen T-shirt Wit
-  price: Basisprijs € 23,00
-5:
-  picture: img/products/GIL-zwaar-zwart.jpg
-  description: Gildan Zwaar katoenen T-shirt Zwart
-  price: Basisprijs € 23,00
-6:
-  picture: img/products/WOM-RC-geel.jpg
-  description: WOMEN'S ROUND COLLAR T-shirt Geel
-  price: Basisprijs € 23,00
-7:
-  picture: img/logo/new-logo.jpg
-  description: D-lynck Drukwerk
-  price: Creative oplossingen
-8:
-  picture: img/logo/new-logo.jpg
-  description: D-lynck Drukwerk
-  price: Creative oplossingen
-9:
-  picture: img/logo/new-logo.jpg
-  description: D-lynck Drukwerk
-  price: Creative oplossingen
-10:
-  picture: img/logo/new-logo.jpg
-  description: D-lynck Drukwerk
-  price: Creative oplossingen
+#-
+#  {
+#    picture: img/logo/new-logo.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/001.jpg
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/002.jpg
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/003.jpg
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/004.jpg
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/005.jpg
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/logo/new-logo.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/006.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/007.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/008.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/009.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/010.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/logo/new-logo.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/011.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/012.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/013.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/014.jpeg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/015.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/logo/new-logo.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/016.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/017.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/018.jpeg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/019.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/020.jpeg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/logo/new-logo.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/021.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/022.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/023.jpg,
+#    description: D-lynck Drukwerk
+#  }
+#-
+#  {
+#    picture: img/examples/024.jpg,
+#    description: D-lynck Drukwerk
+#  }

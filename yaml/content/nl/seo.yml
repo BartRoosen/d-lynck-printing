@@ -8,8 +8,13 @@ menu:
   examples: voorbeelden
   home: home
 
+facebook:
+  link: https://www.facebook.com/DLYNCK/
+  icon: <i class="fab fa-facebook-square"></i>
+  title: Bezoek onze facebook pagina
+
 home:
-  line_1: Creative oplossingen
+  line_1: Creatieve oplossingen
   line_2: Welkom bij D-Lynck drukwerk!
   line_3: Bij ons kan u terecht voor talrijke bedrukkingen, zowel privé als voor uw onderneming.
   button:
